@@ -1,6 +1,5 @@
--- ============================================
--- FitHub Facility Usage Tracker Database Schema
--- RUN THIS FIRST!
+
+-- FitHub Facility Usage Tracker Database for Supabase using 
 -- ============================================
 
 -- Table 1: Facility Status
@@ -44,7 +43,7 @@ CREATE INDEX IF NOT EXISTS idx_equipment_category ON equipment(category);
 CREATE INDEX IF NOT EXISTS idx_waitlist_equipment ON equipment_waitlist(equipment_name);
 CREATE INDEX IF NOT EXISTS idx_waitlist_status ON equipment_waitlist(status);
 
--- Enable RLS
+
 ALTER TABLE facility_status ENABLE ROW LEVEL SECURITY;
 ALTER TABLE equipment ENABLE ROW LEVEL SECURITY;
 ALTER TABLE equipment_waitlist ENABLE ROW LEVEL SECURITY;
@@ -73,7 +72,7 @@ CREATE POLICY "Allow public update" ON equipment_waitlist FOR UPDATE USING (true
 DROP POLICY IF EXISTS "Allow public delete" ON equipment_waitlist;
 CREATE POLICY "Allow public delete" ON equipment_waitlist FOR DELETE USING (true);
 
--- Insert Sample Data
+-- Insert Sample Data for real time situatuion simulation
 INSERT INTO facility_status (area_name, current_capacity, max_capacity, status) VALUES
 ('Main Floor', 15, 50, 'Quiet'),
 ('Cardio Zone', 28, 40, 'Busy'),
