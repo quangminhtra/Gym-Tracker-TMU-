@@ -115,7 +115,7 @@ export function StaffControls() {
                   onClick={() => updateCapacity(facility.id, -5)}
                   disabled={facility.current_capacity === 0}
                 >
-                  <Minus className="w-4 h-4" />
+                  -5
                 </Button>
                 <Button
                   size="sm"
@@ -142,7 +142,7 @@ export function StaffControls() {
                   onClick={() => updateCapacity(facility.id, 5)}
                   disabled={facility.current_capacity >= facility.max_capacity}
                 >
-                  <Plus className="w-4 h-4" />
+                  +5
                 </Button>
               </div>
             </div>

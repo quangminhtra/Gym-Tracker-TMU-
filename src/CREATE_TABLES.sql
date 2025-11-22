@@ -1,6 +1,5 @@
 
--- FitHub Facility Usage Tracker Database for Supabase using 
--- ============================================
+-- FitHub Facility Usage Tracker Database for Supabase using SQL
 
 -- Table 1: Facility Status
 CREATE TABLE IF NOT EXISTS facility_status (
@@ -72,7 +71,7 @@ CREATE POLICY "Allow public update" ON equipment_waitlist FOR UPDATE USING (true
 DROP POLICY IF EXISTS "Allow public delete" ON equipment_waitlist;
 CREATE POLICY "Allow public delete" ON equipment_waitlist FOR DELETE USING (true);
 
--- Insert Sample Data for real time situatuion simulation
+-- Insert Sample Data for real time situatuion
 INSERT INTO facility_status (area_name, current_capacity, max_capacity, status) VALUES
 ('Main Floor', 15, 50, 'Quiet'),
 ('Cardio Zone', 28, 40, 'Busy'),
