@@ -2,7 +2,7 @@
 
 This is a code bundle for Implement Gym Facility Tracker. [Here is the original project](https://www.figma.com/design/VpZuKIFLetB8iOgEpcB7R9/Implement-Gym-Facility-Tracker)
 
-# Gym-Tracker\-TMU\-
+# Gym-Tracker-TMU-
 
 ## Requirements
 
@@ -45,7 +45,7 @@ The keys are found in the google docs shared by Minh.
 
 > [!IMPORTANT]
 > Ensure that the `.env` file is in the root directory **of your project**
-> Hence `~/Gym-Tracker\TMU\-`
+> Hence `~/Gym-Tracker-TMU-`
 
 ## Running the code locally
 
